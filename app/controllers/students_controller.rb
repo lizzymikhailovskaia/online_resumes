@@ -4,4 +4,9 @@ class StudentsController < ApplicationController
 
   def show
   end
+
+  def api
+    render "students.json"
+
+  end
 end

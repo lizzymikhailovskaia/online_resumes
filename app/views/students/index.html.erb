@@ -1,8 +1,12 @@
 <h1>Students#index</h1>
 <p>Find me in app/views/students/index.html.erb</p>
 <div ng-app="app">
-  <div ng-controller="studentsCtrl">
+  <div ng-controller="studentsCtrl" ng-init="setup()">
     <p>{{ message }}</p>
+    <div ng-repeat="student in students">
+      <h3>{{student.first_name}}</h3>
+
+    </div>
   </div>
 
 </div>
