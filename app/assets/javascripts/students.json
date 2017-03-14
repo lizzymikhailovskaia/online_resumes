@@ -1,0 +1,28 @@
+{
+  "first_name": "Douglas",
+  "last_name": "Crockford",
+  "email": "douglas.crockford@gmail.com",
+  "password": "",
+  "phone_number": "555-555-5555",
+  "short_bio": "Created .json format",
+  "linkedin_url": "website.com",
+  "twitter_handle": "website.com",
+  "website_url": "website.com",
+  "online_resume_url": "website.com",
+  "github_url": "website.com",
+  "photo": ""
+},
+{
+  "first_name": "Yukihiro",
+  "last_name": "Matsumoto",
+  "email": "Yukihiro.Matsumoto@gmail.com",
+  "password": "",
+  "phone_number": "",
+  "short_bio": "designed and developed Ruby in the mid-1990s",
+  "linkedin_url": "website.com",
+  "twitter_handle": "website.com",
+  "website_url": "website.com",
+  "online_resume_url": "website.com",
+  "github_url": "website.com",
+  "photo": ""
+}
