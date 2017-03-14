@@ -1,11 +1,15 @@
-<h1>Students#index</h1>
-<p>Find me in app/views/students/index.html.erb</p>
+<h1>students information: </h1>
 <div ng-app="app">
   <div ng-controller="studentsCtrl" ng-init="setup()">
     <p>{{ message }}</p>
     <div ng-repeat="student in students">
-      <h3>{{student.first_name}}</h3>
-
+      <h3>Name: {{student.first_name}} {{student.last_name}}</h3>
+      <p>Email: {{student.email}}</p>
+      <p>Phone Number: {{student.phone_number}}</p>
+      <p>Short Bio: {{student.short_bio}}</p>
+      <p>Linkedin: {{student.linkedin_url}}</p>
+      <p>Github: {{student.github_url}}</p>
+      <p>Website: {{student.website_url}}</p><br>
     </div>
   </div>
 
