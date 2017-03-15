@@ -1,78 +1,88 @@
 <div ng-app="app">
     <div ng-controller="studentsCtrl" ng-init="setup()">
         <div class="container-fluid">
-            <div class="col-sm-12"></div>
+            <div class="row">
+                <div class="col-sm-12 text-center">
+                  <img src="{{student.photo}}" alt="" class="img-circle">
+                </div>
+              </div>
+                <div class="row">
+                    <div class="col-sm-3"></div>
+                    <div class="col-sm-6  text-center">
+                        {{message}}
+                        <div class="thumbnail">
+                            <div class="caption">
+                                <h3>Name:
+                                    {{student.first_name}}
+                                    {{student.last_name}}</h3>
+                                <p>Email:
+                                    {{student.email}}</p>
+                                <p>Short Bio:
+                                    {{student.short_bio}}</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-3"></div>
+                </div>
+                <div class="row">
+                    <div class="col-sm-2"></div>
+                    <div class="col-sm-8 text-center">
+                        <div class="thumbnail">
+                            <h3>Education:</h3><hr>
+                            <div class="caption" ng-repeat="education in educations">
+                                <p>School Name:
+                                    {{education.university_name}}</p>
+                                <p>Degree:
+                                    {{education.degree}}</p>
+                                <p>Start Date:
+                                    {{education.start_date}}</p>
+                                <p>End Date:
+                                    {{education.end_date}}</p>
+                                <p>Details:
+                                    {{education.details}}</p><hr>
+                            </div>
+                        </div>
+                        <div class="thumbnail">
+                            <h3>Experience:</h3><hr>
+                            <div class="caption" ng-repeat="experience in experiences">
+                                <p>Job Title:
+                                    {{experience.job_title}}</p>
+                                <p>Company:
+                                    {{experience.company_name}}</p>
+                                <p>Start Date:
+                                    {{experience.start_date}}</p>
+                                <p>End Date:
+                                    {{experience.end_date}}</p>
+                                <p>Details:
+                                    {{experience.details}}</p><hr>
+                            </div>
+                        </div>
+                        <div class="thumbnail">
+                            <h3>Capstone:</h3><hr>
+                            <div class="caption" ng-repeat="capstone in capstones">
+                                <p>School Name:
+                                    {{capstone.name}}</p>
+                                <p>Degree:
+                                    {{capstone.description}}</p>
+                                <p>Start Date:
+                                    {{capstone.url}}</p>
+                                <p>Screen Shot:
+                                </p><img src="{{ capstone.screenshot }}" alt=""><hr>
+                            </div>
+                        </div>
+                        <div class="thumbnail">
+                            <h3>Skills:</h3><hr>
+                            <div class="caption" ng-repeat="skill in skills">
+                                <p>
+                                    {{skill.skill_name}}</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-2"></div>
+                </div>
 
-            <div class="col-sm-3"></div>
-            <div class="col-sm-6">
-                {{message}}
-                <div class="thumbnail">
-                    <div class="caption">
-                        <h3>Name:
-                            {{student.first_name}}
-                            {{student.last_name}}</h3>
-                        <p>Email:
-                            {{student.email}}</p>
-                        <p>Short Bio:
-                            {{student.short_bio}}</p>
-                    </div>
-                </div>
-            </div>
-            <div class="col-sm-3"></div>
 
-            <div class="col-sm-2"></div>
-            <div class="col-sm-8">
-                <div class="thumbnail">
-                    <h3>Education:</h3>
-                    <div class="caption" ng-repeat="education in educations">
-                        <p>School Name:
-                            {{education.university_name}}</p>
-                        <p>Degree:
-                            {{education.degree}}</p>
-                        <p>Start Date:
-                            {{education.start_date}}</p>
-                        <p>End Date:
-                            {{education.end_date}}</p>
-                        <p>Details:
-                            {{education.details}}</p><br>
-                    </div>
-                </div>
-                <div class="thumbnail">
-                    <h3>Experience:</h3>
-                    <div class="caption" ng-repeat="experience in experiences">
-                        <p>Job Title:
-                            {{experience.job_title}}</p>
-                        <p>Company:
-                            {{experience.company_name}}</p>
-                        <p>Start Date:
-                            {{experience.start_date}}</p>
-                        <p>End Date:
-                            {{experience.end_date}}</p>
-                        <p>Details:
-                            {{experience.details}}</p><br>
-                    </div>
-                </div>
-                <div class="thumbnail">
-                    <h3>Capstone:</h3>
-                    <div class="caption" ng-repeat="capstone in capstones">
-                        <p>School Name:
-                            {{capstone.name}}</p>
-                        <p>Degree:
-                            {{capstone.description}}</p>
-                        <p>Start Date:
-                            {{capstone.url}}</p>
-                        <p>Screen Shot: </p><img src="{{ capstone.screenshot }}" alt=""><br>
-                    </div>
-                </div>
-                <div class="thumbnail">
-                    <h3>Skills:</h3>
-                    <div class="caption" ng-repeat="skill in skills">
-                        <p>
-                            {{skill.skill_name}}</p>
-                    </div>
-                </div>
-            </div>
-            <div class="col-sm-2"></div>
         </div>
     </div>
+</div>
 </div>
