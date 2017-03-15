@@ -1,4 +1,4 @@
-{
+[{
   "first_name": "Douglas",
   "last_name": "Crockford",
   "email": "douglas.crockford@gmail.com",
@@ -25,4 +25,4 @@
   "online_resume_url": "website.com",
   "github_url": "website.com",
   "photo": ""
-}
+}]
