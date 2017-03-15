@@ -10,6 +10,9 @@
             $http.get("http://localhost:3001/api/students/1.json").then(function(response){
               $scope.student = response.data;
               $scope.educations = $scope.student.educations;
+              $scope.experiences = $scope.student.experiences;
+              $scope.capstones = $scope.student.capstones;
+              $scope.skills = $scope.student.skills;
             });
 
             // $http({

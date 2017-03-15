@@ -29,12 +29,46 @@
                             {{education.university_name}}</p>
                         <p>Degree:
                             {{education.degree}}</p>
-                        <p>Degree:
+                        <p>Start Date:
                             {{education.start_date}}</p>
-                        <p>Degree:
+                        <p>End Date:
                             {{education.end_date}}</p>
+                        <p>Details:
+                            {{education.details}}</p><br>
+                    </div>
+                </div>
+                <div class="thumbnail">
+                    <h3>Experience:</h3>
+                    <div class="caption" ng-repeat="experience in experiences">
+                        <p>Job Title:
+                            {{experience.job_title}}</p>
+                        <p>Company:
+                            {{experience.company_name}}</p>
+                        <p>Start Date:
+                            {{experience.start_date}}</p>
+                        <p>End Date:
+                            {{experience.end_date}}</p>
+                        <p>Details:
+                            {{experience.details}}</p><br>
+                    </div>
+                </div>
+                <div class="thumbnail">
+                    <h3>Capstone:</h3>
+                    <div class="caption" ng-repeat="capstone in capstones">
+                        <p>School Name:
+                            {{capstone.name}}</p>
                         <p>Degree:
-                            {{education.details}}</p>
+                            {{capstone.description}}</p>
+                        <p>Start Date:
+                            {{capstone.url}}</p>
+                        <p>Screen Shot: </p><img src="{{ capstone.screenshot }}" alt=""><br>
+                    </div>
+                </div>
+                <div class="thumbnail">
+                    <h3>Skills:</h3>
+                    <div class="caption" ng-repeat="skill in skills">
+                        <p>
+                            {{skill.skill_name}}</p>
                     </div>
                 </div>
             </div>
