@@ -3,6 +3,7 @@ class StudentsController < ApplicationController
   end
 
   def show
+    render "show.html.erb"
   end
 
   def api
