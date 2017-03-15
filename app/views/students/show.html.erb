@@ -1,2 +1,38 @@
-<h1>Students#show</h1>
-<p>Find me in app/views/students/show.html.erb</p>
+<div ng-app="app">
+    <div ng-controller="studentsCtrl" ng-init="setup()">
+        <div class="container-fluid">
+            <div class="col-sm-12"></div>
+
+            <div class="col-sm-3"></div>
+            <div class="col-sm-6">
+                {{message}}
+                <div class="thumbnail">
+                    <div class="caption">
+                        <h3>Name:
+                            {{student.first_name}}
+                            {{student.last_name}}</h3>
+                        <p>Email:
+                            {{student.email}}</p>
+                        <p>Short Bio:
+                            {{student.short_bio}}</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-3"></div>
+
+            <div class="col-sm-2"></div>
+            <div class="col-sm-8">
+              <div class="thumbnail">
+                <h3>Education:</h3>
+                  <div class="caption" ng-repeat="education in educations">
+                      <p>School Name:
+                          {{education.university_name}}</p>
+                      <p>Degree:
+                          {{education.degree}}</p>
+                  </div>
+              </div>
+            </div>
+            <div class="col-sm-2"></div>
+        </div>
+    </div>
+</div>

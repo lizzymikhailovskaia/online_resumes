@@ -1,28 +1,75 @@
 [{
-  "first_name": "Douglas",
-  "last_name": "Crockford",
-  "email": "douglas.crockford@gmail.com",
-  "password": "",
-  "phone_number": "555-555-5555",
-  "short_bio": "Created .json format",
-  "linkedin_url": "website.com",
-  "twitter_handle": "website.com",
-  "website_url": "website.com",
-  "online_resume_url": "website.com",
-  "github_url": "website.com",
-  "photo": ""
-},
-{
-  "first_name": "Yukihiro",
-  "last_name": "Matsumoto",
-  "email": "Yukihiro.Matsumoto@gmail.com",
-  "password": "",
-  "phone_number": "",
-  "short_bio": "designed and developed Ruby in the mid-1990s",
-  "linkedin_url": "website.com",
-  "twitter_handle": "website.com",
-  "website_url": "website.com",
-  "online_resume_url": "website.com",
-  "github_url": "website.com",
-  "photo": ""
+    "id": 1,
+    "first_name": "Luke",
+    "last_name": "O'Connor",
+    "email": "luke@luke.com",
+    "password_digest": "$2a$10$26XHcT0fBCIU2P.KDo1yAegApEhr0aBvuhBb3Sgd8UBCALRmv9EcS",
+    "phone_number": "1-503-078-9934",
+    "short_bio": "Fear is the path to the dark side... fear leads to anger... anger leads to hate... hate leads to suffering.",
+    "linkedin_url": "linkedin.com/nicolas",
+    "twitter_handle": "twitter.com/try-hard",
+    "website_url": "harris.name",
+    "online_resume_url": "bechtelar.info",
+    "github_url": "github.com/danimalkingdom",
+    "photo": "https://robohash.org/remomnisipsum.png?size=300x300&set=set1",
+    "capstones": [{
+            "name": "Golem",
+            "description": "Mossdeep City",
+            "url": "Golem.com",
+            "screenshot": "https://robohash.org/estaspernaturet.png?size=300x300&set=set1"
+        },
+        {
+            "name": "Poliwrath",
+            "description": "Rustboro City",
+            "url": "Poliwrath.com",
+            "screenshot": "https://robohash.org/doloremqueenimsit.png?size=300x300&set=set1"
+        }
+    ],
+    "educations": [{
+            "start_date": "2016-10-13",
+            "end_date": "2017-11-12",
+            "degree": "Associate Degree in Design",
+            "university_name": " Technical College",
+            "details": " Campus"
+        },
+        {
+            "start_date": "2016-05-30",
+            "end_date": "2018-02-12",
+            "degree": "Associate Degree in Biomedical Science",
+            "university_name": " University",
+            "details": " Campus"
+        }
+    ],
+    "experiences": [{
+            "start_date": "2016-04-26",
+            "end_date": "2017-08-09",
+            "job_title": "firefighter",
+            "company_name": "Anderson-Bogan",
+            "details": "iterate vertical applications"
+        },
+        {
+            "start_date": "2016-07-05",
+            "end_date": "2017-04-23",
+            "job_title": "judge",
+            "company_name": "Harber Inc",
+            "details": "integrate customized metrics"
+        },
+        {
+            "start_date": "2016-09-29",
+            "end_date": "2017-08-19",
+            "job_title": "attorney at law",
+            "company_name": "Fritsch-Torphy",
+            "details": "recontextualize frictionless schemas"
+        },
+        {
+            "start_date": "2016-10-13",
+            "end_date": "2018-02-28",
+            "job_title": "advocate",
+            "company_name": "Brown-Swift",
+            "details": "cultivate leading-edge schemas"
+        }
+    ],
+    "skills": [{
+        "skill_name": "Ruby on Rails"
+    }]
 }]
