@@ -1,11 +1,11 @@
 <div ng-app="app">
-    <div ng-controller="studentsCtrl" ng-init="setup()">
+    <div ng-controller="studentsCtrl" ng-init="setupIndex()">
         <div class="container-fluid">
             <div class="row">
                 <div class="col-sm-10">
                     <div class="row">
                         <div class="col-sm-12">
-                            <div class="thumbnail" ng-repeat="student in students">
+                            <div class="thumbnail" ng-repeat="student in students | filter: nameFilter | orderBy: orderAttribute:descending" class="index_profile_thumbnail">
                                 <div class="row">
                                     <div class="col-sm-4">
                                         <img src="{{student.photo}}" alt="" class="index_profile_img center-block">
@@ -40,7 +40,10 @@
                 </div>
                 <div class="col-sm-2">
                     <div class="list-group">
-                        <button type="button" class="list-group-item" ng-rea>{{ }}</button>
+                        Find by Name:
+                        <input ng-model="nameFilter" list="names">
+
+                        <button type="button" class="list-group-item" ng-click="toggleOrder('name')">Reverse Order</button>
                     </div>
                 </div>
             </div>
