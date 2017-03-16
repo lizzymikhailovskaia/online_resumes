@@ -1,28 +1,37 @@
 <div ng-app="app">
     <div ng-controller="studentsCtrl" ng-init="setup()">
         <div class="container-fluid">
-            <p>{{ message }}</p>
             <div class="row">
                 <div class="col-sm-10">
                     <div class="row">
                         <div class="col-sm-12">
                             <div class="thumbnail" ng-repeat="student in students">
-                                <div class="caption">
-                                    <h3>Name:
-                                        {{student.first_name}}
-                                        {{student.last_name}}</h3>
-                                    <p>Email:
-                                        {{student.email}}</p>
-                                    <p>Phone Number:
-                                        {{student.phone_number}}</p>
-                                    <p>Short Bio:
-                                        {{student.short_bio}}</p>
-                                    <p>Linkedin:
-                                        {{student.linkedin_url}}</p>
-                                    <p>Github:
-                                        {{student.github_url}}</p>
-                                    <p>Website:
-                                        {{student.website_url}}</p><br>
+                                <div class="row">
+                                    <div class="col-sm-4">
+                                        <img src="{{student.photo}}" alt="" class="index_profile_img center-block">
+                                    </div>
+                                    <div class="col-sm-8">
+                                        <div class="caption">
+                                            <h3 ng-click="getId(student.id)">
+                                                <a href="/students/{{student.id}}">
+                                                    {{student.first_name}}
+                                                    {{student.last_name}}
+                                                </a>
+                                            </h3>
+                                            <p>
+                                                {{student.email}}</p>
+                                            <p>
+                                                {{student.phone_number}}</p>
+                                            <p>
+                                                {{student.short_bio}}</p>
+                                            <p>Linkedin:
+                                                {{student.linkedin_url}}</p>
+                                            <p>Github:
+                                                {{student.github_url}}</p>
+                                            <p>Website:
+                                                {{student.website_url}}</p><br>
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
                         </div>
@@ -31,10 +40,7 @@
                 </div>
                 <div class="col-sm-2">
                     <div class="list-group">
-                        <button type="button" class="list-group-item">Degree</button>
-                        <button type="button" class="list-group-item">Degree</button>
-                        <button type="button" class="list-group-item">Degree</button>
-                        <button type="button" class="list-group-item">Degree</button>
+                        <button type="button" class="list-group-item" ng-rea>{{ }}</button>
                     </div>
                 </div>
             </div>
