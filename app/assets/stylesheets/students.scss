@@ -1,6 +1,7 @@
 // Place all the styles related to the Students controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+
 .index_profile_img {
   width: 80%;
   margin-top: 40px;
@@ -9,4 +10,22 @@
 
 .index_profile_thumbnail {
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+
+.thumbnail {
+    box-shadow: 0.3px 0.3px 0.3px 0.3px #888888;
+}
+
+.profile_img {
+    padding: 10px;
+    width: 17%;
+    border-radius: 50%;
+    box-shadow: 0.5px 0.5px 0.5px 0.5px #888888;
+}
+
+.capstone_img {
+  width: 17%;
+}
+
+.bold_text {
+  font-weight: bold;
 }
