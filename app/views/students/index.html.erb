@@ -9,7 +9,7 @@
                             <div class="thumbnail" ng-repeat="student in students | filter: nameFilter | orderBy: orderAttribute:descending" class="index_profile_thumbnail">
                                 <div class="row">
                                     <div class="col-sm-4">
-                                        <img src="{{student.photo}}" alt="" class="index_profile_img center-block">
+                                        <a href="/students/{{student.id}}"><img src="{{student.photo}}" alt="" class="index_profile_img center-block" ng-click="getId(student.id)"></a>
                                     </div>
                                     <div class="col-sm-8">
                                         <div class="caption">

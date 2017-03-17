@@ -1,43 +1,5 @@
 <div ng-app="app">
-    <div ng-controller="studentsCtrl" ng-init="setup(<%= @studentId %>)">
-        <div class="container-fluid">
-            <div class="col-sm-12"></div>
-
-            <div class="col-sm-3"></div>
-            <div class="col-sm-6">
-                {{message}}
-                <div class="thumbnail">
-                    <div class="caption">
-                        <h3>Name:
-                            {{student.first_name}}
-                            {{student.last_name}}</h3>
-                        <p>Email:
-                            {{student.email}}</p>
-                        <p>Short Bio:
-                            {{student.short_bio}}</p>
-                    </div>
-                </div>
-            </div>
-            <div class="col-sm-3"></div>
-
-            <div class="col-sm-2"></div>
-            <div class="col-sm-8">
-              <div class="thumbnail">
-                <h3>Education:</h3>
-                  <div class="caption" ng-repeat="education in educations">
-                      <p>School Name:
-                          {{education.university_name}}</p>
-                      <p>Degree:
-                          {{education.degree}}</p>
-                  </div>
-              </div>
-            </div>
-            <div class="col-sm-2"></div>
-        </div>
-    </div>
-</div>
-=======
-    <div ng-controller="studentsCtrl" ng-init="setup()">
+    <div ng-controller="studentsCtrl" ng-init="setupShow(<%= @studentId %>)">
         <div class="container-fluid">
             <div class="row">
                 <div class="col-sm-12 text-center">
@@ -67,11 +29,10 @@
                     <div class="thumbnail">
                         <p>Education:</p><br>
                         <div class="caption" ng-repeat="education in educations">
-                          <hr>
                             <p class="bold_text">{{education.university_name}}</p>
                             <p>{{education.degree}}</p>
                             <p>
-                                {{education.start_date}} --- {{education.end_date}}</p>
+                                {{education.start_date}} --- {{education.end_date}}</p><hr>
                             <!-- <p>Details:
                                 {{education.details}}</p> -->
                         </div>
