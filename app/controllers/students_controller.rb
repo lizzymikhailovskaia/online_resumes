@@ -1,13 +1,10 @@
 class StudentsController < ApplicationController
   def index
+
   end
 
   def show
-    render "show.html.erb"
+    @studentId = params[:id]
   end
 
-  def api
-    render "students.json"
-
-  end
 end
