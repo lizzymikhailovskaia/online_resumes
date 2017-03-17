@@ -1,2 +1,82 @@
-<h1>Students#show</h1>
-<p>Find me in app/views/students/show.html.erb</p>
+<div ng-app="app">
+    <div ng-controller="studentsCtrl" ng-init="setup()">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-sm-12 text-center">
+                    <img src="{{student.photo}}" alt="" class="profile_img">
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-sm-3"></div>
+                <div class="col-sm-6 text-center">
+                    <div class="thumbnail">
+                        <div class="caption">
+                            <h3>
+                                {{student.first_name}}
+                                {{student.last_name}}</h3>
+                            <p>
+                                {{student.email}}</p>
+                            <p>
+                                {{student.short_bio}}</p><br>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-3"></div>
+            </div>
+            <div class="row">
+                <div class="col-sm-2"></div>
+                <div class="col-sm-8">
+                    <div class="thumbnail">
+                        <p>Education:</p><br>
+                        <div class="caption" ng-repeat="education in educations">
+                          <hr>
+                            <p class="bold_text">{{education.university_name}}</p>
+                            <p>{{education.degree}}</p>
+                            <p>
+                                {{education.start_date}} --- {{education.end_date}}</p>
+                            <!-- <p>Details:
+                                {{education.details}}</p> -->
+                        </div>
+                    </div>
+                    <div class="thumbnail">
+                        <p>Experience:</p><br>
+                        <div class="caption" ng-repeat="experience in experiences">
+                            <p class="bold_text">
+                                {{experience.job_title}}</p>
+                            <p>
+                                {{experience.company_name}}</p>
+                            <p>
+                                {{experience.start_date}} --- {{experience.end_date}}   ||   {{experience.details}}</p><hr>
+
+                            <!-- <p>Details:
+                                {{experience.details}}</p><hr> -->
+                        </div>
+                    </div>
+                    <div class="thumbnail">
+                        <p>Capstone:</p><br>
+                        <div class="caption" ng-repeat="capstone in capstones">
+                            <p class="bold_text">
+                                {{capstone.name}}</p>
+                            <p>Description:
+                                {{capstone.description}}</p>
+                            <p>Link:
+                                {{capstone.url}}</p>
+                            <p>Screen Shot:
+                            </p><img src="{{ capstone.screenshot }}" alt="" class="capstone_img"><hr>
+                        </div>
+                    </div>
+                    <div class="thumbnail">
+                        <p>Skills:</p><br>
+                        <div class="caption" ng-repeat="skill in skills">
+                            <button class="btn btn-info">
+                                {{skill.skill_name}}</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-2"></div>
+            </div>
+
+        </div>
+    </div>
+</div>
+</div>
